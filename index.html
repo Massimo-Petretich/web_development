@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport">
+    <meta content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A test webpage">
+    <meta name="keywords" content="test, html, formatting">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gruppo&family=Press+Start+2P&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Gruppo&family=Nixie+One&family=Press+Start+2P&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Mulish:wght@200&display=swap">
+    <title>Mazarus</title>
+    <script src="replaceWithEmoji.js"></script>
+    <script src="generateToc.js"></script>
+    <script src="switchMode.js"></script>
+    <script src="fadeInBody.js"></script>
+    <script src="addListElementFromTemplate.js"></script>
+    <script src="addClockHands.js"></script>
+    <script src="addClockTicks.js"></script>
+    <script src="animateClock.js"></script>
+</head>
+
+
+<body>
+
+    <svg id="clock" viewBox="0 0 100 100">
+        <circle class="face" id="dial" cx="50" cy="50" r="25" data-rIscaler="0.85" stroke-width="0.5" />
+        <circle id="center" cx="50" cy="50" r="1" />
+    </svg>
+
+
+    <div class="left_clipped">
+        <div id=main_title>
+            <h1>Mazzano web page</h1>
+            <button id="dark_light_mode_button" onclick="switchMode()">
+                light/dark
+            </button>
+        </div>
+
+
+
+        <h2>Introduction</h2>
+
+        <div id="google_link" a-new-attribute="value of new attribute" class="first_class second_class"
+            data-relevance='1' data-mark='2'>
+            <a href='https://google.com' title='This takes you to Google' target=_blank>
+                Google
+            </a>
+            <p>
+                # Unlike many event listeners, though, a Promise represents a single
+                computation, and each function registered with then() will be
+                invoked only once. It is worth noting that the function you pass to
+                then() is invoked asynchronously, even if the asynchronous
+            <p>
+        </div>
+
+        <iframe id="youtube video frame" width="400" src="https://www.youtube.com/embed/jfKfPfyJRdk?si=NGb_1K5PotxcNrnX"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+        </iframe>
+
+        <div id="image_text">
+            <img id="image1"
+                src="https://th.bing.com/th/id/R.6e2e877e3cd712d293fb474a428764ac?rik=dcbXPRwL8ycBEg&pid=ImgRaw&r=0"
+                width=400px>
+            <p name="long paragraph">
+                Rather than running some kind of predetermined computation, they
+                typically wait for the user to do something and then respond to the
+                user’s actions. The web browser generates an event when the user
+                presses a key on the keyboard, moves the mouse, clicks a mouse
+                button, or touches a touchscreen device. Event-driven JavaScript
+                programs register callback functions for specified types of events in
+                specified contexts, and the web browser invokes those functions
+                whenever the specified events occur. These callback functions are
+                called event handlers or event listeners, and they are registered with
+                addEventListener():
+                okay.addEventListener('click', applyUpdate);
+                In this example, applyUpdate() is a hypothetical callback function
+                that we assume is implemented somewhere else. The call to
+                document.querySelector() returns an object that represents a
+                single specified element in the web page. We call
+                addEventListener() on that element to register our callback.
+                Then the first argument to addEventListener() is a string that
+                specifies the kind of event we’re interested in—a mouse click or
+                touchscreen tap, in this case. If the user clicks or taps on that specific
+                element of the web page, then the browser will invoke our
+                applyUpdate() callback function, passing an object that includes
+            </p>
+            <p name="short paragraph">
+                Rather than running some kind of predetermined computation, they
+                typically wait for the user to do something and then respond to the
+                user’s actions.
+            </p>
+        </div>
+
+        <p name="shorter one">
+            In this example, applyUpdate() is a hypothetical callback function
+            that we assume is implemented somewhere else. The call to
+            document.querySelector() returns an object that represents a
+            single specified element in the web page. We call
+            addEventListener() on that element to register our callback.
+        </p>
+
+        <canvas id='square'>
+        </canvas>
+
+        <audio controls>
+            <source src="Free_Test_Data_5MB_MP3.mp3">
+            Your browser does not support the audio element.
+        </audio>
+
+
+        <h2>Paragraphs boxed</h2>
+        <div id="div_paragraph_boxed">
+            <h3>Unboxed</h3>
+            <p name="first_child">
+                In this example, applyUpdate() is a hypothetical callback function
+                that we assume is implemented somewhere else. The call to
+                document.querySelector() returns an object that represents a
+                single specified element in the web page. We call
+                addEventListener() on that element to register our callback.
+            </p>
+            <p>
+                In this example, applyUpdate() is a hypothetical callback function
+                that we assume is implemented somewhere else. The call to
+                document.querySelector() returns an object that represents a
+                single specified element in the web page. We call
+                addEventListener() on that element to register our callback.
+            </p>
+            <h3>Paragraphs boxed</h3>
+            <p class="paragraphs_boxed">
+                In this example, applyUpdate() is a hypothetical callback function
+                that we assume is implemented somewhere else. The call to
+                document.querySelector() returns an object that represents a
+                single specified element in the web page. We call
+                addEventListener() on that element to register our callback.
+            </p>
+            <p class="paragraphs_boxed">
+                In this example, applyUpdate() is a hypothetical callback function
+                that we assume is implemented somewhere else. The call to
+                document.querySelector() returns an object that represents a
+                single specified element in the web page. We call
+                addEventListener() on that element to register our callback.
+            </p>
+            <p id="after_paragraphs_boxed">
+            <h3>After paragraphs boxed</h3>
+            In this example, applyUpdate() is a hypothetical callback function
+            that we assume is implemented somewhere else. The call to
+            document.querySelector() returns an object that represents a
+            single specified element in the web page. We call
+            addEventListener() on that element to register our callback.
+            </p>
+            <p>
+                In this example, applyUpdate() is a hypothetical callback function
+                that we assume is implemented somewhere else. The call to
+                document.querySelector() returns an object that represents a
+                single specified element in the web page. We call
+                addEventListener() on that element to register our callback.
+            </p>
+        </div>
+
+
+        <a href="mailto:fake1234@gmail.com" target="_self" title="mail me">
+            Mail me!!!
+        </a>
+
+        <h2>Matplolib</h2>
+        <a id="hyperlink to matplotlib"
+            href="https://matplotlib.org/stable/gallery/images_contours_and_fields/contour_image.html#sphx-glr-gallery-images-contours-and-fields-contour-image-py"
+            title="An example from matplotlib">
+            <img src="https://matplotlib.org/stable/_images/sphx_glr_contour_image_001.png" width="300">
+        </a>
+
+
+        <h2>My notebook section</h2>
+        <div id="notebook_div">
+            <p>The first text node.</p>
+            <a id="notebook" href="1_stats_qc_filtering.html" title="a new notebook" target="_blank">
+                '1 stats qc_filtering'
+            </a>
+            Then there is a Text Node.
+            <p>New text</p>
+        </div>
+
+        <p>
+            At a simple syntactical level, the then() method is the distinctive
+            feature of Promises, and it is idiomatic to append .then() directly to
+            the function invocation that returns the Promise, without the
+            intermediate step of assigning the Promise object to a variable.
+        </p>
+
+        <dl>
+            <template id="detailed_list_element">
+                <dt></dt>
+                <dd></dd>
+            </template>
+
+            <dt>Name 1</dt>
+            <dd>Descriptio 1
+            <dd>
+
+            <dt>Name 2</dt>
+            <dd>
+                Describe name 2
+                <ol type="A">
+                    <li>sub list 1</li>
+                    <li>sub list 2</li>
+                </ol>
+            <dd>
+        </dl>
+
+        <button id="PoopEmojyButton" onclick="replaceWithEmoji()">
+            click here :)
+        </button>
+
+        <h2>Matplotlib animated</h2>
+        <div id="matplotlib">
+            <a id="hyperlink to matplotlib"
+                href="https://matplotlib.org/stable/gallery/images_contours_and_fields/contour_image.html#sphx-glr-gallery-images-contours-and-fields-contour-image-py"
+                title="An example from matplotlib">
+                <img src="https://matplotlib.org/stable/_images/sphx_glr_contour_image_001.png" width="300"
+                    id="matplotlib_image">
+            </a>
+        </div>
+    </div>
+
+</body>
+
+</html>

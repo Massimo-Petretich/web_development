@@ -1,0 +1,183 @@
+:root {
+	--background-color: black;
+	--color: white;
+}
+
+.light-mode {
+	--background-color: white;
+	--color: black;
+}
+
+.hidden {
+	display: none;
+}
+
+body {
+	font-family: 'Mulish', 'Bungee Hairline', 'Nixie One', 'Gruppo', 'Courier New', 'consolas', 'sans-serif';
+	color: var(--color);
+	background-color: var(--background-color);
+	margin: 0%;
+	padding: 0%;
+	opacity: 0;
+	transition: opacity 2s ease-in-out;
+}
+
+h1 {
+	letter-spacing: 6px;
+}
+
+h2 {
+	letter-spacing: 5px;
+}
+
+h3 {
+	letter-spacing: 4px;
+}
+
+h4,
+h5,
+h6 {
+	letter-spacing: 2px;
+}
+
+#clock {
+	width: 10%;
+	position: fixed;
+	top: 0%;
+	stroke: var(--color);
+}
+
+#clock #dial {
+	fill: var(--background-color);
+}
+
+#clock .tickNumber {
+	font-size: 0.5rem;
+}
+
+#TOC {
+	font-size: 1rem;
+	width: 20%;
+	margin: 0.5%;
+	position: fixed;
+	top: 40%;
+}
+
+.TOC_h3 {
+	margin-left: 3%;
+}
+
+.TOC_h4,
+TOC_h5,
+TOC_h6 {
+	margin-left: 6%;
+}
+
+#TOC a {
+	color: var(--color);
+	text-decoration: none;
+	font-size: 1rem;
+}
+
+#TOC a:hover {
+	color: orange;
+}
+
+
+
+.left_clipped {
+	margin-left: 20%;
+	position: relative;
+}
+
+#main_title {
+	background-color: var(--background-color);
+	position: sticky;
+	top: 0%;
+	right: 0%;
+	//left: 15%;
+}
+
+#dark_light_mode_button {
+	color: var(--color);
+	background-color: var(--background-color);
+	border: none;
+	cursor: pointer;
+}
+
+
+canvas {
+	width: 200px;
+	height: 200px;
+}
+
+p:hover {
+	color: pink;
+}
+
+
+#image_text {
+	width: 800px;
+	//overflow: auto;
+}
+
+#image1 {
+	float: left;
+	//margin: 0 10px 10px 0px;
+}
+
+
+.paragraphs_boxed {
+	border-style: solid;
+	border-color: var(--color);
+	border-width: 5px;
+	width: 300px;
+	float: left;
+}
+
+#after_paragraphs_boxed {
+	clear: left;
+}
+
+#PoopEmojyButton {
+	background-color: white;
+	width: 300px;
+	font-size: 20px;
+	font-size: 33px;
+	border-radius: 5px;
+}
+
+
+
+
+
+
+#matplotlib_image {
+	animation: myRotateZ, mySlider;
+	animation-duration: 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+#PoopEmojyButton:hover {
+	animation: mySlider;
+	animation-duration: 5s;
+	animation-timing-function: linear;
+}
+
+/*
+@keyframes mySlider{
+	from{margin-left: 0%;}
+	to{margin-left:90%;}
+}
+
+@keyframes myRotate {
+    0% { transform: rotateX(0deg); }
+    50% { transform: rotateX(90deg); }
+    100% { transform: rotateX(360deg); }
+}
+
+@keyframes myRotateZ {
+    100%{ transform: rotateZ(360deg); }
+}
+*/
